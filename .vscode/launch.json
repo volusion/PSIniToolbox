@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PowerShell: Run Pester Tests",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/Invoke-Tests.ps1",
+            "args": [
+                "-Output",
+                "Detailed"
+            ],
+            "cwd": "${workspaceFolder}",
+            "createTemporaryIntegratedConsole": true
+        },
+        {
+            "name": "PowerShell: Run Pester Tests + Coverage",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/Invoke-Tests.ps1",
+            "args": [
+                "-Coverage",
+                "-Output",
+                "Detailed"
+            ],
+            "cwd": "${workspaceFolder}",
+            "createTemporaryIntegratedConsole": true
+        },
+        {
+            "name": "PowerShell: Run Pester Tests on Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/Invoke-Tests.ps1",
+            "args": [
+                "-Path",
+                "${file}",
+                "-Output",
+                "Detailed"
+            ],
+            "cwd": "${workspaceFolder}",
+            "createTemporaryIntegratedConsole": true
+        },
+        {
+            "name": "PowerShell: Run Pester Tests on Current File + Coverage",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/Invoke-Tests.ps1",
+            "args": [
+                "-Path",
+                "${file}",
+                "-Coverage",
+                "-Output",
+                "Detailed"
+            ],
+            "cwd": "${workspaceFolder}",
+            "createTemporaryIntegratedConsole": true
+        }
+    ]
+}

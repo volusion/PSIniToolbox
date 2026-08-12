@@ -1,6 +1,6 @@
 ﻿@{
     RootModule        = 'PSIniToolbox.psm1'
-    ModuleVersion     = '0.1.0' # x-release-please-version
+    ModuleVersion     = '1.0.0' # x-release-please-version
     GUID              = 'ee6e5d66-34f8-4960-9a50-ededcb36b03c'
     Author            = 'Ian Cervantez'
     CompanyName       = 'Volusion'
